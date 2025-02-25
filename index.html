@@ -27,14 +27,14 @@
     header {
       background: url('https://source.unsplash.com/1600x900/?biomedical') no-repeat center center/cover;
       color: #fff;
-      padding: 150px 20px;
+      padding: 100px 20px;
       text-align: center;
       position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      height: 60vh; /* Reduced height */
       background-size: cover;
       background-position: center;
     }
@@ -52,9 +52,9 @@
     }
 
     header h1 {
-      font-size: 4rem;
+      font-size: 2.8rem; /* Reduced from 4rem */
       font-weight: 600;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       text-transform: uppercase;
       letter-spacing: 2px;
       text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
@@ -62,10 +62,10 @@
     }
 
     header p {
-      font-size: 1.3rem;
-      max-width: 800px;
-      margin-bottom: 30px;
-      line-height: 1.8;
+      font-size: 1.1rem; /* Reduced from 1.3rem */
+      max-width: 700px;
+      margin-bottom: 25px;
+      line-height: 1.6;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
       animation: fadeInUp 2s ease-out;
     }
@@ -73,10 +73,10 @@
     .cta-btn {
       background: linear-gradient(90deg, #009688, #00bfae);
       color: #fff;
-      padding: 14px 35px;
+      padding: 12px 30px; /* Slightly smaller */
       border: none;
       border-radius: 50px;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: bold;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
@@ -96,27 +96,27 @@
 
     /* Content Section */
     section {
-      padding: 60px 20px;
+      padding: 50px 20px; /* Slightly reduced padding */
       background: #fff;
       text-align: center;
       max-width: 1200px;
-      margin: 0 auto;
+      margin: 20px auto;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+      font-size: 2.2rem; /* Slightly smaller */
+      margin-bottom: 15px;
       color: #009688;
       font-weight: bold;
     }
 
     section p {
-      font-size: 1.2rem;
-      max-width: 800px;
+      font-size: 1.1rem;
+      max-width: 750px;
       margin: 0 auto;
-      line-height: 1.8;
+      line-height: 1.7;
       color: #666;
     }
 
@@ -125,14 +125,18 @@
       background: #333;
       color: #fff;
       text-align: center;
-      padding: 20px 0;
+      padding: 15px 0;
       font-size: 0.9rem;
     }
 
     /* Mobile View */
     @media (max-width: 768px) {
+      header {
+        height: 50vh; /* Even shorter on mobile */
+      }
+
       header h1 {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
       }
 
       header p {
@@ -142,11 +146,11 @@
 
       .cta-btn {
         padding: 10px 25px;
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
 
       section h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
 
       section p {
@@ -161,7 +165,6 @@
   <header>
     <h1>Welcome to Био-Анагаахын Хүрээлэн</h1>
     <p>Your gateway to cutting-edge biomedical research and innovation. Pushing the boundaries of science, health, and technology for a better future.</p>
-    <!-- Changed button to Login link -->
     <button class="cta-btn" onclick="window.location.href='login.html'">Login</button>
   </header>
 
@@ -176,9 +179,10 @@
   <footer>
     <p>&copy; 2024 Био-Анагаахын Хүрээлэн. All rights reserved.</p>
   </footer>
-<script type="module" src="auth.js"></script>
-  <script type="module" src="main.js"></script>
 
+  <script type="module" src="auth.js"></script>
+  <script type="module" src="main.js"></script>
 
 </body>
 </html>
+
